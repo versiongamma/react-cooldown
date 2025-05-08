@@ -1,0 +1,11 @@
+demo
+public
+index.html
+vite.config.ts
+tsconfig.*
+eslint.config.js
+
+.vscode
+
+# Build files
+*.tgz
