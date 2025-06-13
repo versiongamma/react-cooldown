@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^0.12.7
     version: 0.12.7
   react-cooldown:
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: ^0.0.2
+    version: 0.0.2
   typescript:
     specifier: ~5.8.3
     version: 5.8.3
@@ -3256,8 +3256,8 @@ packages:
       unpipe: 1.0.0
     dev: true
 
-  /react-cooldown@0.0.1:
-    resolution: {integrity: sha512-QJwPZu6ZGy8y+uSAcBDYwgttgcxIdLLZvbo8ojVRWbJgFzv1z4KGETq9qjIArajnu0r9BmBASDloT6wH2bS6Xg==}
+  /react-cooldown@0.0.2:
+    resolution: {integrity: sha512-vNjuLUlfcNJYdottvetR5LY0/9ns9jTksT8oVmJ5mUEGsCTq99T1CRvsuDFTj37/E0JQ5I24JYytK2qdf/eu+w==}
     dependencies:
       js-md5: 0.8.3
       react: 19.1.0
