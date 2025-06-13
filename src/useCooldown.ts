@@ -63,6 +63,12 @@ const useCooldown = (params?: Params): [
   useEffect(() => {
     const previousTimer = getTimer(key);
     if (previousTimer) {
+      if (previousTimer.time + previousTimer.duration < new Date().getTime()) {
+        setOnCooldown(false);
+        clearTimer(key);
+        return;
+      }
+
       const intervalId = startTimerIntervalFn(previousTimer);
       setOnCooldown(true);
       return () => clearInterval(intervalId);
