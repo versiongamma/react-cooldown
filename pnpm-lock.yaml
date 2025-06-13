@@ -11,9 +11,6 @@ dependencies:
   react:
     specifier: ^19.1.0
     version: 19.1.0
-  react-cooldown-tar:
-    specifier: ./react-cooldown-0.0.0.tgz
-    version: file:react-cooldown-0.0.0.tgz
   react-dom:
     specifier: ^19.1.0
     version: 19.1.0(react@19.1.0)
@@ -3762,13 +3759,3 @@ packages:
   /zod@3.24.4:
     resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
     dev: true
-
-  file:react-cooldown-0.0.0.tgz:
-    resolution: {integrity: sha512-6TyaY+CBLG8bOm+u3lpw13r1OSQWpM/06J6+g2LvOj0JZF7GIe77EFkvA3RP8z9QMdSlNcOsxlz6zMJYXL8L/g==, tarball: file:react-cooldown-0.0.0.tgz}
-    name: react-cooldown
-    version: 0.0.0
-    dependencies:
-      js-md5: 0.8.3
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
-    dev: false
