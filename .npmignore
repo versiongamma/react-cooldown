@@ -1,13 +1,13 @@
-demo
-src
-public
-index.html
-vite.config.ts
-tsconfig.*
-eslint.config.js
-*.config.json
+# demo
+# src
+# public
+# index.html
+# vite.config.ts
+# tsconfig.*
+# eslint.config.js
+# *.config.json
 
-.vscode
+# .vscode
 
-# Build files
-*.tgz
+# # Build files
+# *.tgz
