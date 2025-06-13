@@ -4,21 +4,26 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "demo": "vite",
+    "build-demo": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "build:lib": "babel --extensions '.ts' src -d lib",
+    "build:types": "tsc --declaration --emitDeclarationOnly --noEmit false -p \"tsconfig.pack.json\" --outDir \"./types\"",
+    "build": "pnpm build:types && pnpm build:lib",
+    "pack": "npm pack"
   },
   "dependencies": {
-    "base-64": "^1.0.0",
     "js-md5": "^0.8.3",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "rollup": "^4.40.1"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
     "@eslint/js": "^9.25.0",
-    "@types/base-64": "^1.0.2",
+    "@types/node": "^24.0.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",

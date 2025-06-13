@@ -26,7 +26,7 @@ const useCooldown = (params?: Params): [
   const [secondsRemaining, setSecondsRemaining] = useState(0);
   const [onCooldown, setOnCooldown] = useState(false);
 
-  const startTimerIntervalFn = useCallback((timer: Timer): number => {
+  const startTimerIntervalFn = useCallback((timer: Timer): NodeJS.Timeout => {
     const update = (): number => {
       const diff = new Date().getTime() - timer.time;
       setTimeRemaining(timer.duration - diff);
