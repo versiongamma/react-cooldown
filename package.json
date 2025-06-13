@@ -10,6 +10,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
+    "typeCheck": "tsc && tsc -p ./demo/tsconfig.json",
     "build": "tsc --declaration --noEmit false --outDir \"./dist\"",
     "dev:demo": "vite",
     "build:demo": "vite build",

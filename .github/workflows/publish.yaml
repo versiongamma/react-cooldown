@@ -23,8 +23,13 @@ jobs:
         with:
           version: 10
 
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
-      - run: npm publish --provenance --access public
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Compile package
+        run: pnpm build
+
+      - name: Publish package to NPM
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
