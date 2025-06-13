@@ -1,7 +1,7 @@
 {
   "name": "react-cooldown",
   "description": "Frontend cooldown for React projects",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "repository": "https://github.com/versiongamma/react-cooldown",
   "homepage": "https://github.com/versiongamma/react-cooldown",
   "type": "module",
