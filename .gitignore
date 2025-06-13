@@ -25,5 +25,3 @@ dist-ssr
 
 # Build files
 *.tgz
-types/
-lib/

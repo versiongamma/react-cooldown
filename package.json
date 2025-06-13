@@ -5,15 +5,17 @@
   "repository": "https://github.com/versiongamma/react-cooldown",
   "type": "module",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "demo": "vite",
     "build-demo": "tsc -b && vite build",
     "lint": "eslint .",
-    "build:lib": "babel --extensions '.ts' src -d lib",
-    "build:types": "tsc --declaration --emitDeclarationOnly --noEmit false -p \"tsconfig.pack.json\" --outDir \"./types\"",
-    "build": "pnpm build:types && pnpm build:lib"
+    "build": "tsc --declaration --noEmit false --outDir \"./dist\""
   },
-  "files": ["types", "lib"],
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "js-md5": "^0.8.3",
     "react": "^19.1.0",
@@ -34,6 +36,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "path": "^0.12.7",
+    "react-cooldown": "^0.0.1",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
