@@ -1,4 +1,4 @@
-import useCooldown from 'react-cooldown';
+import useCooldown from '../src';
 import './App.css'
 import Progress from './Progress';
 

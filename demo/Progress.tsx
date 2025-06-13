@@ -1,4 +1,4 @@
-import useCooldown, { FREQUENCIES } from "react-cooldown";
+import useCooldown, { FREQUENCIES } from "../src";
 
 const DURATION = 3000;
 
