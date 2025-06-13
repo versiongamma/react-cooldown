@@ -9,11 +9,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    // Package commands
     "lint": "eslint .",
     "build": "tsc --declaration --noEmit false --outDir \"./dist\"",
-
-    // Demo site commands
     "dev:demo": "vite",
     "build:demo": "vite build",
     "preview:demo": "http-server site"
