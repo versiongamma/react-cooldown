@@ -1,9 +1,9 @@
 {
   "name": "react-cooldown",
   "description": "Frontend cooldown for React projects",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "https://github.com/versiongamma/react-cooldown",
-  "homepage": "https://github.com/versiongamma/react-cooldown#readme",
+  "homepage": "https://github.com/versiongamma/react-cooldown",
   "type": "module",
   "license": "MIT",
   "main": "dist/index.js",

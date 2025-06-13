@@ -1,6 +1,8 @@
-# react-cooldown
-
+# React Cooldown
 A hook allowing for frontend cooldowns in a React project.
+
+> ⚠️ NOTE: This is only for frontend protection. It will not protect direct access to endpoints, and should be paired with
+> rate limiting or some other kind of endpoint protection if necessary.
 
 ## Installation
 
