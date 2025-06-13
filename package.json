@@ -9,10 +9,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "demo": "vite",
-    "build-demo": "tsc -b && vite build",
+    // Package commands
     "lint": "eslint .",
-    "build": "tsc --declaration --noEmit false --outDir \"./dist\""
+    "build": "tsc --declaration --noEmit false --outDir \"./dist\"",
+
+    // Demo site commands
+    "dev:demo": "vite",
+    "build:demo": "vite build",
+    "preview:demo": "http-server site"
   },
   "files": [
     "dist"
@@ -36,6 +40,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "http-server": "^14.1.1",
     "path": "^0.12.7",
     "react-cooldown": "^0.0.2",
     "typescript": "~5.8.3",
