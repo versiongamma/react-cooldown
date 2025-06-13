@@ -1,4 +1,4 @@
-name: Publish to NPMjs
+name: Publish to NPM
 on:
   push:
     tags: ['*']
@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: npm publish --provenance --access public
         env:
