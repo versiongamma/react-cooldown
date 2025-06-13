@@ -1,7 +1,8 @@
 # React Cooldown
-![NPM Version](https://img.shields.io/npm/v/react-cooldown)
+![NPM Version](https://img.shields.io/npm/v/react-cooldown?logo=npm)
 ![NPM License](https://img.shields.io/npm/l/react-cooldown)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-cooldown)
+![npm package minimized gzipped size](https://img.shields.io/bundlejs/size/react-cooldown?logo=npm)
+![GitHub branch check runs](https://img.shields.io/github/check-runs/versiongamma/react-cooldown/main?logo=github)
 
 A hook allowing for frontend cooldowns in a React project.
 
