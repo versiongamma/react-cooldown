@@ -2,10 +2,7 @@ name: Deploy Demo Site
 
 on:
   push:
-    branches:
-      - main
-    paths:
-      - 'demo/**'
+    tags: ['*']
 
 jobs:
   build:
