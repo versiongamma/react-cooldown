@@ -1,4 +1,4 @@
-import useCooldown, { FREQUENCIES } from "../../src";
+import useCooldown, { FREQUENCIES } from "react-cooldown";
 import { buildStyles, CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import './Progress.css';
@@ -25,10 +25,7 @@ const Progress = () => {
       </button>
       <div className="circular-progress" onClick={onCooldownRadial ? () => { } : () => startCooldownRadial(3000)} aria-disabled={onCooldownRadial}>
         <CircularProgressbarWithChildren value={radialPercent} strokeWidth={12} styles={buildStyles({
-          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
           strokeLinecap: 'butt',
-          // Text size
-          textSize: '12px',
           pathTransition: 'none',
           trailColor: onCooldownRadial ? "#FF0000" : "#1A1A1A",
           pathColor: "#1A1A1A"

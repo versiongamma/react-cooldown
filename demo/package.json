@@ -17,6 +17,7 @@
     "http-server": "^14.1.1",
     "react": "^19.1.0",
     "react-circular-progressbar": "^2.2.0",
+    "react-cooldown": "^0.0.12",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {

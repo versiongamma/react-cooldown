@@ -2,8 +2,6 @@ name: Deploy Demo Site
 
 on:
   workflow_dispatch:
-  push:
-    tags: ['*']
 
 jobs:
   build:

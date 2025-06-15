@@ -17,6 +17,9 @@ importers:
       react-circular-progressbar:
         specifier: ^2.2.0
         version: 2.2.0(react@19.1.0)
+      react-cooldown:
+        specifier: ^0.0.12
+        version: 0.0.12
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
@@ -942,6 +945,9 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
+  js-md5@0.8.3:
+    resolution: {integrity: sha512-qR0HB5uP6wCuRMrWPTrkMaev7MJZwJuuw4fnwAzRgP4J4/F8RwtodOKpGp4XpqsLBFzzgqIO42efFAyz2Et6KQ==}
+
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -1103,6 +1109,9 @@ packages:
     resolution: {integrity: sha512-cgyqEHOzB0nWMZjKfWN3MfSa1LV3OatcDjPz68lchXQUEiBD5O1WsAtoVK4/DSL0B4USR//cTdok4zCBkq8X5g==}
     peerDependencies:
       react: '>=0.14.0'
+
+  react-cooldown@0.0.12:
+    resolution: {integrity: sha512-KG2ZgcEuf+IN6Kun7EPZdPHfdIURG34hodNbw0d6rlmExv73hp29KPmSYUZot53OGKWXEj7CZhhq0+eyjvPmVw==}
 
   react-dom@19.1.0:
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
@@ -2164,6 +2173,8 @@ snapshots:
 
   isexe@2.0.0: {}
 
+  js-md5@0.8.3: {}
+
   js-tokens@4.0.0: {}
 
   js-yaml@4.1.0:
@@ -2296,6 +2307,12 @@ snapshots:
   react-circular-progressbar@2.2.0(react@19.1.0):
     dependencies:
       react: 19.1.0
+
+  react-cooldown@0.0.12:
+    dependencies:
+      js-md5: 0.8.3
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   react-dom@19.1.0(react@19.1.0):
     dependencies:
