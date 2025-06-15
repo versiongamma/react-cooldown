@@ -28,6 +28,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Install demo dependencies
+        run: pnpm install --frozen-lockfile
         working-directory: ./demo
 
       - name: Build site
