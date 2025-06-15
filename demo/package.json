@@ -1,27 +1,22 @@
 {
-  "name": "react-cooldown",
+  "name": "react-cooldown-demo",
   "description": "Frontend cooldown for React projects",
+  "private": true,
   "version": "0.0.10",
   "repository": "https://github.com/versiongamma/react-cooldown",
   "homepage": "https://github.com/versiongamma/react-cooldown",
   "type": "module",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
     "typeCheck": "tsc",
-    "build": "tsc --declaration --noEmit false --outDir \"./dist\"",
-    "dev:demo": "vite",
-    "build:demo": "vite build",
-    "preview:demo": "http-server site"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "http-server dist"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
-    "js-md5": "^0.8.3",
+    "http-server": "^14.1.1",
     "react": "^19.1.0",
+    "react-circular-progressbar": "^2.2.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
@@ -29,11 +24,14 @@
     "@types/node": "^24.0.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "path": "^0.12.7",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.30.1"
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
   }
 }

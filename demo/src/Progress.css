@@ -1,0 +1,22 @@
+.circular-progress {
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.25s;
+
+
+}
+
+.circular-progress[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.circular-progress:hover {
+  border-color: #646cff;
+}
+
+.circular-progress[aria-disabled="true"]:hover {
+  border-color: transparent;
+}

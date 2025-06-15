@@ -1,4 +1,4 @@
-import useCooldown from '../src';
+import useCooldown from '../../src';
 import './App.css'
 import Progress from './Progress';
 
@@ -11,13 +11,13 @@ const App = () => {
       <h1>React Cooldown Demo</h1>
       <div className="card">
         <button onClick={() => startCooldown1(10000)} disabled={onCooldown1}>
-          {onCooldown1 ? `Wait ${secondsRemaining1} Seconds` : "Start 10 Second Cooldown"}
+          {onCooldown1 ? `Wait ${secondsRemaining1} Seconds` : "10 Second Cooldown"}
         </button>
         <button onClick={() => startCooldown2(5000)} disabled={onCooldown2}>
-          {onCooldown2 ? `Wait ${secondsRemaining2} Seconds` : "Start 5 Second Cooldown"}
+          {onCooldown2 ? `Wait ${secondsRemaining2} Seconds` : "5 Second Cooldown"}
         </button>
         <button onClick={() => startCooldown3(3000)} disabled={onCooldown3}>
-          {onCooldown3 ? `Wait ${secondsRemaining3} Seconds` : "Start 3 Second Cooldown"}
+          {onCooldown3 ? `Wait ${secondsRemaining3} Seconds` : "3 Second Cooldown"}
         </button>
       </div>
       <Progress />

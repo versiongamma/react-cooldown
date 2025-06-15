@@ -28,15 +28,17 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        working-directory: ./demo
 
       - name: Build site
-        run: pnpm build:demo
+        run: pnpm build
+        working-directory: ./demo
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
           name: production-files
-          path: ./site
+          path: ./demo/dist
 
   deploy:
     name: Deploy
@@ -49,10 +51,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: production-files
-          path: ./site
+          path: ./demo/dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./demo/dist
